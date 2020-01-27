@@ -1,8 +1,8 @@
 # UIT docker workshop
 
-![UIT docker workshop](./images/cover.png)
+![UIT docker workshop](./images/docker.webp)
 
-This is an introductory tutorial on Docker containers. By the end of this article, you will know how to use Docker on your local machine. Along with Python, we are going to run Nginx and Redis containers. Those examples assume that you are familiar with the basic concepts of those technologies. There will be lots of shell examples, so go ahead and open the terminal.
+This is an introductory workshop on Docker containers @ UIT. By the end of this workshop, you will know how to use Docker on your local machine. Along with html,python,php,wordpress, we are going to run Nginx,Redis and mysql containers. Those examples assume that you are familiar with the basic concepts of those technologies.There will be lots of shell examples, so go ahead and open [play-with-docker](https://labs.play-with-docker.com/).
 
 ## Table of contents
 
@@ -316,22 +316,6 @@ To see the results saved to file run:
 ```bash
 cat ./vol/results
 ```
-
-## Best practices for creating images
-
-* Include only **necessary context** -- use a [**.dockerignore**](https://docs.docker.com/engine/reference/builder/#dockerignore-file) file (like .gitignore in git)
-* Avoid installing **unnecessary packages** -- it will consume extra disk space.
-* **Use cache**. Add context which changes a lot (for example, the source code of your project) at the end of Dockerfile -- it will utilize Docker cache effectively.
-* **Be careful with volumes**. You should remember what data is in volumes. Because volumes are persistent and don't die with the containers, the next container will use data from the volume created by the previous container.
-* Use [**environment variables**](https://docs.docker.com/engine/reference/builder/#environment-replacement) (in RUN, EXPOSE, VOLUME). It will make your Dockerfile more flexible.
-
-## Alpine images
-
-A lot of Docker images (versions of images) are created on top of [**Alpine Linux**](https://alpinelinux.org/) -- this is a lightweight distro that allows you to reduce the overall size of Docker images.
-
-I recommend that you use images based on Alpine for third-party services, such as Redis, Postgres, etc. For your app images, use images based on [**buildpack**](https://hub.docker.com/_/buildpack-deps/) -- it will be easy to debug inside the container, and you'll have a lot of pre-installed system-wide requirements.
-
-Only you can decide which base image to use, but you can get the maximum benefit by using one basic image for all images, because in this case the cache will be used more effectively.
 
 ## Example 4: Connection between containers
 
