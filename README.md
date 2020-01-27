@@ -9,6 +9,7 @@ This is an introductory tutorial on Docker containers. By the end of this articl
 * [Example 1: hello world](#example-1-hello-world)
 * [Example 2: Environment variables and volumes](#example-2-environment-variables-and-volumes)
 * [Example 3: Writing your first Dockerfile](#example-3-writing-your-first-dockerfile)
+* [Example 4: Connection between containers](#example-4-connection-between-containers)
 * [Best practices for creating images](#best-practices-for-creating-images)
 * [Alpine images](#alpine-images)
 * [Example 4: Connection between containers](#example-4-connection-between-containers)
