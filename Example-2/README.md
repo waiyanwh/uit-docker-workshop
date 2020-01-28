@@ -8,7 +8,7 @@ Change the directory to **Example-2**:
 docker run -d --name "nginx-demo" -p 8080:80 -v $(pwd)/nginx-demo/html/:/usr/share/nginx/html:ro nginx:latest
 ```
 
-**Warning:** This command looks quite heavy, but it's just an example to explain volumes and env variables. In 99% of real-life cases, you won't start Docker containers manually –- you'll use customize docker image or use orchestration services (we'll cover [docker-compose](https://docs.docker.com/compose/overview/) in [example 4](Example-4/README.md) or write a custom script to do it.
+**Warning:** This command looks quite heavy, but it's just an example to explain volumes and env variables. In 99% of real-life cases, you won't start Docker containers manually –- you'll use customize docker image or use orchestration services (we'll cover [docker-compose](https://docs.docker.com/compose/overview/) in [example 4](../Example-4/README.md) or write a custom script to do it.
 
 Console output:
 
