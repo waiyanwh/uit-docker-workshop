@@ -319,13 +319,24 @@ cat ./vol/results
 
 [**Docker compose**](https://docs.docker.com/compose/overview/) -- is an CLI utility used to connect containers with each other.
 
-You can install docker-compose [via pip](https://pypi.org/project/docker-compose/):
+You can install docker-compose [via pip](https://pypi.org/project/docker-compose/) or download binary.
 
+**Pip way:**
 ```bash
 sudo pip install docker-compose
 ```
+**Download binary:**
 
-In this example, I am going to connect Python and Redis containers.
+1. Run this command to download the current stable release of Docker Compose:
+```bash
+sudo curl -L "https://github.com/docker/compose/releases/download/1.25.3/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+```
+2. Apply executable permissions to the binary:
+```bash
+sudo chmod +x /usr/local/bin/docker-compose
+```
+
+In this example, wa are going to connect Python and Redis containers.
 
 ```yaml
 version: '3.6'
