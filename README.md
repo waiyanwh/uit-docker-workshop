@@ -12,6 +12,7 @@ This is an introductory workshop on Docker containers @ UIT. By the end of this 
 * [Example 3: Writing your first Dockerfile](#example-3-writing-your-first-dockerfile)
 * [Example 4: Running demo-website with nginx image](#example-4-running-demo-website-with-nginx-image)
 * [Example 5: Connection between containers](#example-4-connection-between-containers)
+* [Bonus app]()
 * [Docker way](#docker-way)
 * [Conclusion](#conclusion)
 
@@ -499,7 +500,7 @@ Collecting itsdangerous>=0.24 (from flask==1.0.2->-r /requirements.txt (line 1))
 Collecting Werkzeug>=0.14 (from flask==1.0.2->-r /requirements.txt (line 1))
   Downloading https://files.pythonhosted.org/packages/20/c4/12e3e56473e52375aa29c4764e70d1b8f3efa6682bef8d0aae04fe335243/Werkzeug-0.14.1-py2.py3-none-any.whl (322kB)
 Collecting MarkupSafe>=0.23 (from Jinja2>=2.10->flask==1.0.2->-r /requirements.txt (line 1))
-  Downloading https://files.pythonhosted.org/packages/4d/de/32d741db316d8fdb7680822dd37001ef7a448255de9699ab4bfcbdf4172b/MarkupSafe-1.0.tar.gz
+  Downloading https://files.pythonhosted.org/packages/4d/de/32d741db316d8fdb7680822dd37001ef7a448255de9699ab4bfcbdf4172b/MarkupSafe-1.0.tar.gz## MiniTwit an example application written in Python/Flask
 Building wheels for collected packages: itsdangerous, MarkupSafe
   Running setup.py bdist_wheel for itsdangerous: started
   Running setup.py bdist_wheel for itsdangerous: finished with status 'done'
@@ -613,7 +614,30 @@ local               polls_redis_data
 local               projectdev_pg_data
 local               projectdev_redis_data
 ```
+## MiniTwit an example application written in Python/Flask
 
+MiniTwit
+
+because writing todo lists is not fun
+
+#### What is MiniTwit?
+
+A SQLite and Flask powered twitter clone
+#### Docker instructions
+
+To create a docker image execute:
+
+```bash
+cd minitwit
+docker build . -t minitwit
+```
+
+To run the docker image execute:
+
+```bash
+docker run -p 5000:5000 minitwit
+```
+and visit with your browser http://localhost:5000
 ## Docker way
 
 Docker has some restrictions and requirements, depending on the architecture of your system (applications that you pack into containers). You can ignore these requirements or find some workarounds, but in this case, you won't get all the benefits of using Docker. My strong advice is to follow these recommendations:
