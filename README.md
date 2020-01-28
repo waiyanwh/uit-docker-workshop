@@ -377,13 +377,12 @@ d30904aa94a4        nginx-demo   "./wrapper.sh"      3 seconds ago       Up 2 se
 Did you encounter this error while cloning and building the Docker Image:
 
 ```
-docker: Error response from daemon: oci runtime error: container_linux.go:247: starting container process caused "exec: \"./wrapper.sh\": pe
-rmission denied".
+docker: Error response from daemon: oci runtime error: container_linux.go:247: starting container process caused "exec: ./wrapper.sh": permission denied".
 ```
 
-This is due to permission issue. The wrapper.sh script possibly doesn't have executable permission. Run chmod +x wrapper.sh and re-build the Docker Image.
+This is due to permission issue. The wrapper.sh script possibly doesn't have executable permission. Run `chmod +x wrapper.sh` and re-build the Docker Image.
 
-Displaying Container Ports:\
+Displaying Container Ports:
 ```bash
 $ docker port < container id >
   80/tcp -> 0.0.0.0:32782
