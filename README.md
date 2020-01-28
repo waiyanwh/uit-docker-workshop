@@ -10,7 +10,8 @@ This is an introductory workshop on Docker containers @ UIT. By the end of this 
 * [Example 1: hello world](#example-1-hello-world)
 * [Example 2: Environment variables and volumes](#example-2-environment-variables-and-volumes)
 * [Example 3: Writing your first Dockerfile](#example-3-writing-your-first-dockerfile)
-* [Example 4: Connection between containers](#example-4-connection-between-containers)
+* [Example 4: Running demo-website with nginx](/nginx-demo/README.md)
+* [Example 5: Connection between containers](#example-4-connection-between-containers)
 * [Docker way](#docker-way)
 * [Conclusion](#conclusion)
 
