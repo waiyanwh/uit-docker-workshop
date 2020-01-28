@@ -12,7 +12,7 @@ This is an introductory workshop on Docker containers @ UIT. By the end of this 
 * [Example 3: Writing your first Dockerfile](#example-3-writing-your-first-dockerfile)
 * [Example 4: Running demo-website with nginx image](#example-4-running-demo-website-with-nginx-image)
 * [Example 5: Connection between containers](#example-4-connection-between-containers)
-* [Bonus app]()
+* [Bonus app](#bonus-app)
 * [Docker way](#docker-way)
 * [Conclusion](#conclusion)
 
@@ -614,11 +614,19 @@ local               polls_redis_data
 local               projectdev_pg_data
 local               projectdev_redis_data
 ```
-## MiniTwit an example application written in Python/Flask
+## Bonus App
 
 MiniTwit
 
 because writing todo lists is not fun
+
+## Wordpress and mysql
+
+```bash
+cd wordpress
+docker-compose up -d
+```
+* **-d** is the option to run the container in daemon mode (background).
 
 #### What is MiniTwit?
 
