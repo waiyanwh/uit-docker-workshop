@@ -15,7 +15,7 @@ You can check [Dockerfile reference](https://docs.docker.com/engine/reference/bu
 
 Let us look at how to create a Dockerfile which set up a simple webpage for us.
 
-First, we will build a Docker Image shown below:
+First, we will build a Docker Image with codes from **Example-2** shown below:
 ```bash
 $ cd Example-2/nginx-demo
 $ docker build -t nginx-demo .
