@@ -7,9 +7,9 @@ This is an introductory workshop on Docker containers @ UIT. By the end of this 
 
 ## Table of contents
 
-* [Example 1: hello world](#example-1-hello-world)
-* [Example 2: Environment variables and volumes](#example-2-environment-variables-and-volumes)
-* [Example 3: Writing your first Dockerfile](#example-3-writing-your-first-dockerfile)
+* [Example 1: hello world](Example-1/README.md)
+* [Example 2: Environment variables and volumes](Example-2/README.md)
+* [Example 3: Writing your first Dockerfile](Example-3/README.md)
 * [Example 4: Running demo-website with nginx image](#example-4-running-demo-website-with-nginx-image)
 * [Example 5: Connection between containers](#example-4-connection-between-containers)
 * [Bonus app](#bonus-app)
@@ -163,9 +163,6 @@ docker rm -f $(docker ps -aq)
 * **-q** flag (for ps) is to print only container IDs.
 
 ## Example 2: Environment variables and volumes
-
-Starting from this example, you'll need several additional files you can find on my [GitHub repo](https://github.com/waiyanwh/uit-docker-workshop).
-You can clone my repo or simply use the [following link](https://github.com/waiyanwh/uit-docker-workshop/archive/master.zip) to download the sample files.
 
 It's time to create and run more a meaningful container, like **Nginx**.
 
