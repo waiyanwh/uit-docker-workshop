@@ -207,3 +207,11 @@ local               polls_redis_data
 local               projectdev_pg_data
 local               projectdev_redis_data
 ```
+
+## Wordpress and mysql
+
+```bash
+cd wordpress
+docker-compose up -d
+```
+* **-d** is the option to run the container in daemon mode (background).
