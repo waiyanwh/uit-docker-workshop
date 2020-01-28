@@ -30,7 +30,7 @@ afa095a8b81960241ee92ecb9aa689f78d201cff2469895674cec2c2acdcc61c
 
 Now check this [url](http://127.0.0.1:8080/) in your web browser.
 
-We can try to change **$(pwd)/nginx-demo/html** (which is mounted as a volume to **/usr/share/nginx/html** directory inside the container) to **$(pwd)/sample-index** and refresh the page.
+We can try to change `$(pwd)/nginx-demo/html` (which is mounted as a volume to `/usr/share/nginx/html` directory inside the container) to `$(pwd)/sample-index` and refresh the page.
 
 Let's get the information about **nginx-demo** container:
 
