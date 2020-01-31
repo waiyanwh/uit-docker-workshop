@@ -3,7 +3,9 @@
 It's time to create and run more a meaningful container, like **Nginx**.
 
 Change the directory to **Example-2**:
-
+```bash
+cd Example-2
+```
 ```bash
 docker run -d --name "nginx-demo" -p 8080:80 -v $(pwd)/nginx-demo/html/:/usr/share/nginx/html:ro nginx:latest
 ```
