@@ -90,7 +90,7 @@ You can open http://localhost:32769 in your browser.
 If you want to run Nginx in your desired port, here is the way:
 
 ```bash
-$ docker run -d -p   8888:80 ajeetraina/nginx-demo-105
+$ docker run -d -p   8888:80 nginx-demo
 beb4fa77b033fb46e9f772110cfcd65e9656af0212931e674a1f2bd34422d478
 
 $ docker ps
